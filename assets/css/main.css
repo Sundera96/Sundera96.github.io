@@ -3313,17 +3313,19 @@ input, select, textarea {
 		min-height: 100vh;
 	}
 
+	#intro div.image_section {
+		display: flex;
+		justify-items: center;
+	}
+
 	#intro img.profile {
-		position: absolute;
-		top: 20px;
-		left: 20px;
-		width: 150px;
-		height: 150px;
+		width: 250px;
+		height: 250px;
 		border-radius: 50%;
 	}
 	
 	#intro h1 {
-		margin-top: 180px; /* Adjust according to the image size */
+		margin-top: 100px; /* Adjust according to the image size */
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3405,7 +3407,6 @@ input, select, textarea {
 
 		#intro p {
 			font-size: 1.25rem;
-			font-style: italic;
 			margin-top: -0.25rem;
 			text-align: center;
 		}
@@ -3779,7 +3780,6 @@ input, select, textarea {
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
 
@@ -4699,4 +4699,8 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+	}
+
+	.projects_sections {
+		border-bottom: solid 2px #eeeeee;
 	}
