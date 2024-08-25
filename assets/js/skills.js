@@ -59,7 +59,12 @@ function createSkillBar(skill) {
     `;
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  showTab("all");
+});
+
 function showTab(tabId) {
+  console.log("Showing tab:", tabId);
   // Remove active class from all tab buttons
   document.querySelectorAll(".tab-button").forEach((button) => {
     button.classList.remove("active");
@@ -95,6 +100,3 @@ function showTab(tabId) {
     }
   });
 }
-
-// Initialize with all skills
-showTab("all");
