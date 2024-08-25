@@ -3956,7 +3956,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
   #main > .post header.major > h1,
   #main > .post header.major h2 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     line-height: 1.2;
     margin: 0 0 1.5rem 0;
   }
@@ -4876,4 +4876,88 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 .responsibilities li ul li {
   margin-bottom: 0.25rem; /* Adjusts space between subpoints */
   padding-left: 0.5rem; /* Adjusts indentation of the subpoints */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-container {
+  width: 80%;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background: #ddd;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.tab-button.active {
+  background: #444;
+  color: white;
+}
+
+.tab-button:hover {
+  background: #aaa;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.skill-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  width: 20%;
+  font-weight: bold;
+}
+
+.progress {
+  width: 60%;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #4caf50;
+}
+
+.skill-level {
+  width: 10%;
+  text-align: right;
 }
