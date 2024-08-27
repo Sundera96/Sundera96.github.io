@@ -33,8 +33,8 @@ const skills = [
    * Framework Section
    */
   { name: "Collections", level: 5, tags: ["all", "frameworks"] },
-  { name: "Concurrency(Java)", level: 5, tags: ["all", "frameworks"] },
-  { name: "NIO(Java)", level: 4, tags: ["all", "frameworks"] },
+  { name: "Concurrency (Java)", level: 5, tags: ["all", "frameworks"] },
+  { name: "NIO (Java)", level: 4, tags: ["all", "frameworks"] },
   { name: "Spring/Spring Boot", level: 5, tags: ["all", "frameworks"] },
   { name: "Hibernate", level: 5, tags: ["all", "frameworks"] },
   { name: "Jax-RS", level: 5, tags: ["all", "frameworks"] },

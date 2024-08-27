@@ -4883,49 +4883,53 @@ h2 {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .skill-name {
-  width: 25%; /* Adjusted width to provide more space */
+  width: 25%; /* Fixed width for consistent alignment */
   font-weight: bold;
-  padding-right: 10px; /* Added padding to separate text from the bar */
+  padding-right: 10px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  text-align: left;
 }
 
 .progress {
-  width: 60%;
+  flex-grow: 1; /* Allows the progress bar to take up the remaining space */
   background: #eee;
   border-radius: 5px;
   overflow: hidden;
-  margin: 0 10px;
+  margin-right: 10px;
+  position: relative; /* Ensures inner bar aligns properly */
 }
 
 .progress-bar {
   height: 20px;
   background-color: #4caf50;
+  width: 100%; /* Fill the entire progress container */
 }
+
 .skill-level {
-  width: 15%; /* Adjusted width */
+  width: 10%; /* Fixed width for consistent alignment */
   text-align: right;
+  box-sizing: border-box; /* Ensures any padding is included in the width */
   margin-top: 5px;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .skill-bar {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
-  .skill-name {
-    width: 25%; /* Consistent width in larger screens */
-  }
-
-  .progress {
-    width: 60%;
-    margin: 0 10px;
+  .skill-name,
+  .progress,
+  .skill-level {
+    width: 100%; /* Full width in small screens */
+    margin-top: 5px;
   }
 
   .skill-level {
-    width: 15%;
-    margin: 0;
+    text-align: right;
+    margin-top: 0;
   }
 }
