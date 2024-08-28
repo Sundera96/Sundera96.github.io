@@ -3534,6 +3534,12 @@ body.is-preload #wrapper.fade-in:before {
   }
 }
 
+@media (max-width: 250px) {
+  #intro h1 {
+    font-size: 1rem; /* Further reduce font size for very small screens */
+  }
+}
+
 #intro p {
   font-size: 1.25rem;
   margin-top: -0.25rem;
