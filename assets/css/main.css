@@ -3530,7 +3530,7 @@ body.is-preload #wrapper.fade-in:before {
 
 @media (max-width: 480px) {
   #intro h1 {
-    font-size: 2rem; /* Further reduce font size for very small screens */
+    font-size: 1.5rem; /* Further reduce font size for very small screens */
   }
 }
 
