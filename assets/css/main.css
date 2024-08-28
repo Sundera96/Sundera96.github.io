@@ -3522,21 +3522,45 @@ body.is-preload #wrapper.fade-in:before {
   line-height: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 834px) {
+  /* iPad Mini, iPhone 12 Pro Max, iPhone 13 Pro Max in landscape */
   #intro h1 {
-    font-size: 3rem; /* Adjust font size for smaller screens */
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* iPhone 12/13 in portrait mode */
+  #intro h1 {
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 480px) {
+  /* Smaller devices like iPhone SE or older models */
   #intro h1 {
-    font-size: 1.5rem; /* Further reduce font size for very small screens */
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Very small screens or further reduction */
+  #intro h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Very small screens */
+  #intro h1 {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 250px) {
+  /* Extra small screens */
   #intro h1 {
-    font-size: 1rem; /* Further reduce font size for very small screens */
+    font-size: 1rem;
   }
 }
 
