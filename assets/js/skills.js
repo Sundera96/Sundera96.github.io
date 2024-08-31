@@ -73,6 +73,14 @@ function createSkillBar(skill) {
 
 document.addEventListener("DOMContentLoaded", function () {
   showTab("all");
+  const interestsList = document.querySelector(".interests-list");
+
+  topicsOfInterest.forEach((topic) => {
+    const interestItem = document.createElement("div"); // Create a new div
+    interestItem.className = "interest-item"; // Add the interest-item class
+    interestItem.textContent = topic; // Set the text content to the topic name
+    interestsList.appendChild(interestItem); // Append the new div to the interests-list container
+  });
 });
 
 function showTab(tabId) {
@@ -110,14 +118,5 @@ function showTab(tabId) {
     if (skill.tags.includes(tabId)) {
       selectedTabContent.innerHTML += createSkillBar(skill);
     }
-  });
-
-  const interestsList = document.querySelector(".interests-list");
-
-  topicsOfInterest.forEach((topic) => {
-    const interestItem = document.createElement("div"); // Create a new div
-    interestItem.className = "interest-item"; // Add the interest-item class
-    interestItem.textContent = topic; // Set the text content to the topic name
-    interestsList.appendChild(interestItem); // Append the new div to the interests-list container
   });
 }
