@@ -33,6 +33,8 @@ const skills = [
    * Framework Section
    */
   { name: "Collections", level: 5, tags: ["all", "frameworks"] },
+  { name: "JUnit", level: 4.5, tags: ["all", "frameworks"] },
+  { name: "Mockito", level: 4, tags: ["all", "frameworks"] },
   { name: "Concurrency (Java)", level: 5, tags: ["all", "frameworks"] },
   { name: "NIO (Java)", level: 4, tags: ["all", "frameworks"] },
   { name: "Spring/Spring Boot", level: 5, tags: ["all", "frameworks"] },
@@ -44,6 +46,16 @@ const skills = [
   { name: "React", level: 4, tags: ["all", "frameworks"] },
   { name: "Spring Security", level: 4, tags: ["all", "frameworks"] },
   { name: "Spring Cloud", level: 4, tags: ["all", "frameworks"] },
+];
+
+const topicsOfInterest = [
+  "Distributed Computing",
+  "Parallel Programming",
+  "Cloud Computing",
+  "Microservices Architecture",
+  "System Design",
+  "Object Oriented Programming",
+  "Machine Learning",
 ];
 
 function createSkillBar(skill) {
@@ -98,5 +110,14 @@ function showTab(tabId) {
     if (skill.tags.includes(tabId)) {
       selectedTabContent.innerHTML += createSkillBar(skill);
     }
+  });
+
+  const interestsList = document.querySelector(".interests-list");
+
+  topicsOfInterest.forEach((topic) => {
+    const interestItem = document.createElement("div"); // Create a new div
+    interestItem.className = "interest-item"; // Add the interest-item class
+    interestItem.textContent = topic; // Set the text content to the topic name
+    interestsList.appendChild(interestItem); // Append the new div to the interests-list container
   });
 }

@@ -4975,3 +4975,37 @@ h2 {
     margin-top: 0;
   }
 }
+
+/* Styling for Topics of Interest section */
+.interests-section {
+  padding: 2rem 1rem;
+  background-color: #fff; /* Matching background with the rest of the portfolio */
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the blocks */
+  gap: 1rem; /* Space between the blocks */
+}
+
+.interest-item {
+  background-color: #007bff; /* Primary blue color */
+  color: #fff; /* White text color */
+  padding: 0.5rem 1.5rem; /* Padding inside each block */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Font size for topic names */
+  font-family: "Source Sans Pro", sans-serif; /* Ensure consistent typography */
+  font-weight: 600;
+  text-align: center; /* Center-align the text within the block */
+  white-space: nowrap; /* Prevent text wrapping */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Subtle shadow for a professional look */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transform and shadow transition on hover */
+}
+
+.interest-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the block on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
