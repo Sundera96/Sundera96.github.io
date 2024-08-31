@@ -4992,20 +4992,18 @@ h2 {
 }
 
 .interest-item {
-  background-color: #007bff; /* Primary blue color */
-  color: #fff; /* White text color */
-  padding: 0.5rem 1.5rem; /* Padding inside each block */
-  border-radius: 4px; /* Rounded corners */
-  font-size: 1rem; /* Font size for topic names */
-  font-family: "Source Sans Pro", sans-serif; /* Ensure consistent typography */
-  font-weight: 600;
-  text-align: center; /* Center-align the text within the block */
-  white-space: nowrap; /* Prevent text wrapping */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Subtle shadow for a professional look */
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transform and shadow transition on hover */
+  border: 1px solid #ccc; /* Grey border */
+  background-color: #f7f7f7; /* Light grey background */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333; /* Dark grey text */
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .interest-item:hover {
-  transform: scale(1.05); /* Slightly enlarge the block on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
 }
